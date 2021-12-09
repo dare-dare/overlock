@@ -53,8 +53,6 @@ button {
   font-family: GmarketSansTTF;
   font-size: 36px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
   letter-spacing: -0.72px;
 }
@@ -62,8 +60,6 @@ button {
   font-family: GmarketSansTTF;
   font-size: 20px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.2;
   letter-spacing: -0.4px;
 
@@ -77,8 +73,14 @@ button {
 
 .nav {
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 20px 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,13 +92,15 @@ button {
   margin-left: 50px;
 
   font-family: GmarketSansTTF;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: -0.4px;
-  color: #232323;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1a202c;
+}
+.nav-left > .active {
+  font-weight: bold;
 }
 .nav-right {
   font-size: 0.75em;
@@ -108,28 +112,23 @@ button {
   font-family: NotoSansKR;
   font-size: 14px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
   letter-spacing: -0.28px;
   color: #414141;
 }
-.nav-right > button {
+.nav-button {
   width: 140px;
   height: 40px;
-  padding: 14px 20px 10px;
   background-color: #2557f5;
-  margin-left: 30px;
 
   font-family: GmarketSansTTF;
   font-size: 14px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.71;
   letter-spacing: normal;
   text-align: center;
   color: #fff;
+  padding: 0 !important;
+  margin: 0 0 0 30px !important;
 }
 
 .row.banner {
@@ -144,8 +143,6 @@ button {
   font-family: GmarketSansTTF;
   font-size: 50px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.2;
   letter-spacing: -2.5px;
   color: #fff;
@@ -154,8 +151,6 @@ button {
   font-family: GmarketSansTTF;
   font-size: 20px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.2;
   letter-spacing: -0.4px;
   color: #fff;
@@ -170,8 +165,6 @@ button {
   font-family: GmarketSansTTF;
   font-size: 16px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   letter-spacing: -0.32px;
   text-align: center;
   color: #fff;
@@ -201,7 +194,7 @@ button {
 }
 
 .row.statistics {
-  background-color: #dbe9fd;
+  background-color: #eef3fe;
   padding: 80px 0 97px;
 }
 .row.statistics > .row-contents {
@@ -215,16 +208,13 @@ button {
   height: 48px;
   object-fit: contain;
   opacity: 0.8;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .statistics-number {
   margin-bottom: 12px;
   font-family: GmarketSansTTF;
   font-size: 40px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.6;
   letter-spacing: normal;
   color: #4c4c4c;
 }
@@ -233,8 +223,6 @@ button {
   font-family: GmarketSansTTF;
   font-size: 26px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 0.92;
   letter-spacing: -1.3px;
   color: #1a202c;
@@ -248,8 +236,6 @@ button {
   font-family: NotoSansKR;
   font-size: 13px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.85;
   letter-spacing: -0.26px;
   color: #232323;
@@ -271,8 +257,6 @@ button {
   font-family: GmarketSansTTF;
   font-size: 26px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: normal;
   letter-spacing: -1.3px;
   color: #fff;
@@ -288,6 +272,7 @@ button {
   box-shadow: 0 0 12px 0 rgba(77, 77, 77, 0.23);
   background-color: #fff;
   text-align: left;
+  border-radius: 0;
 }
 .row.service > .border-box.first {
   margin: 35px auto;
@@ -296,8 +281,6 @@ button {
   font-family: NotoSansKR;
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.25;
   letter-spacing: -0.48px;
   color: #232323;
@@ -314,8 +297,6 @@ button {
   font-family: NotoSansKR;
   font-size: 18px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.67;
   letter-spacing: -0.36px;
   color: #717171;
@@ -324,8 +305,6 @@ button {
   font-family: NotoSansKR;
   font-size: 20px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   letter-spacing: -0.4px;
   text-align: left;
   color: #232323;
@@ -350,6 +329,16 @@ button {
   padding: 60px 0 68px;
   background-color: #eef3fe;
 }
+.row.review > .row-title {
+  font-family: GmarketSansTTF;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: -1.8px;
+  color: #1a202c;
+}
+.row.review > .row-description {
+  margin-top: 15px;
+}
 .row.review > .row-contents {
   margin-top: 40px;
 }
@@ -357,7 +346,7 @@ button {
   box-shadow: none;
   width: 360px;
   height: 332px;
-  padding: 23px 22px 14px 21px;
+  padding: 45px 22px 14px 21px;
   border-radius: 6px;
   background-color: #fff;
   text-align: left;
@@ -369,8 +358,6 @@ button {
   font-family: GmarketSansTTF;
   font-size: 23px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   letter-spacing: -1.15px;
   color: #2557f5;
 }
@@ -387,8 +374,6 @@ button {
   font-family: NotoSansKR;
   font-size: 18px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.67;
   letter-spacing: -0.36px;
   color: #232323;
@@ -402,8 +387,6 @@ button {
   font-family: NotoSansKR;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.86;
   letter-spacing: -0.28px;
   color: #232323;
@@ -426,8 +409,6 @@ button {
   font-family: NotoSansKR;
   font-size: 16px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.88;
   letter-spacing: -0.32px;
   color: #fff;
@@ -441,8 +422,6 @@ button {
   font-family: NotoSansKR;
   font-size: 22px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.36;
   letter-spacing: -0.44px;
 }
@@ -455,8 +434,6 @@ button {
 
   font-size: 16px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   letter-spacing: -0.8px;
   color: #fff;
 }
@@ -469,8 +446,6 @@ button {
   font-family: NotoSansKR;
   font-size: 22px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.36;
   letter-spacing: -0.44px;
   color: #fff;
@@ -486,8 +461,6 @@ button {
   font-family: NotoSansKR;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.14;
   letter-spacing: 0.42px;
   color: #b5b5b5;

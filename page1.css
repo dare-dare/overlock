@@ -34,8 +34,14 @@ p {
 
 .nav {
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 20px 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,6 +60,9 @@ p {
   text-align: left;
   color: #1a202c;
 }
+.nav-left > .active {
+  font-weight: bold;
+}
 .nav-right {
   font-size: 0.75em;
   margin-left: 144px;
@@ -68,11 +77,10 @@ p {
   letter-spacing: -0.28px;
   color: #414141;
 }
-.nav-right > button {
+.nav-button {
   width: 140px;
   height: 40px;
   background-color: #2557f5;
-  margin-left: 30px;
 
   font-family: GmarketSansTTF;
   font-size: 14px;
@@ -80,6 +88,8 @@ p {
   letter-spacing: normal;
   text-align: center;
   color: #fff;
+  padding: 0 !important;
+  margin: 0 0 0 30px !important;
 }
 
 .footer {
@@ -207,7 +217,7 @@ p {
 button {
   width: 170px;
   height: 48px;
-  margin: 7px 1px 8px 1px;
+  margin: 3px 1px;
   padding: 11px 0 13px;
   border: solid 1px #e0e0e0;
   background-color: #fff;
@@ -215,7 +225,6 @@ button {
   font-family: NotoSansKR;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
   letter-spacing: -0.32px;
   text-align: center;
   color: #4d4d4d;

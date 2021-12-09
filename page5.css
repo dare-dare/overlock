@@ -34,8 +34,14 @@ p {
 
 .nav {
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 20px 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,6 +60,9 @@ p {
   text-align: left;
   color: #1a202c;
 }
+.nav-left > .active {
+  font-weight: bold;
+}
 .nav-right {
   font-size: 0.75em;
   margin-left: 144px;
@@ -68,11 +77,10 @@ p {
   letter-spacing: -0.28px;
   color: #414141;
 }
-.nav-right > button {
+.nav-button {
   width: 140px;
   height: 40px;
   background-color: #2557f5;
-  margin-left: 30px;
 
   font-family: GmarketSansTTF;
   font-size: 14px;
@@ -80,6 +88,9 @@ p {
   letter-spacing: normal;
   text-align: center;
   color: #fff;
+  border: none;
+  padding: 0 !important;
+  margin: 0 0 0 30px !important;
 }
 
 .footer {
@@ -147,9 +158,15 @@ p {
 .tabs > .tab {
   width: 300px;
   height: 48px;
-  padding: 11px 98px 13px;
+  padding: 12px 98px;
   border: solid 1px #e0e0e0;
   background-color: #fff;
+
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.32px;
 }
 .tab.active {
   border: solid 1px #4394f0;
@@ -183,6 +200,14 @@ p {
   height: 40px;
   border: solid 1px #e0e0e0;
   background-color: #fff;
+
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.32px;
+  color: #a4a4a4;
 }
 .button:not(:last-child) {
   border-right: none;
@@ -193,19 +218,25 @@ p {
 }
 .button.singup {
   width: 100%;
-  padding: 14px 20px 10px;
   border-radius: 2px;
   background-color: #2557f5;
   color: #fff;
   margin-top: 30px;
+
+  font-family: GmarketSansTTF;
+  font-size: 14px;
+  font-weight: 500;
 }
 .button.singin {
   width: 100%;
-  padding: 14px 20.4px 10px 20px;
   border: solid 1px #2557f5;
   background-color: #fff;
   color: #2557f5;
   margin-top: 16px;
+
+  font-family: GmarketSansTTF;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .row-title,
