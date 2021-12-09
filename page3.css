@@ -1,0 +1,254 @@
+.page-link-button {
+  background-color: #ccc;
+  color: #000;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  margin: 1em;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFBold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFMedium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFLight.ttf");
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+
+.nav {
+  margin: 0 auto;
+  padding: 1em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-left > .logo {
+  height: 19.6px;
+}
+.nav-left > span {
+  margin-left: 50px;
+
+  font-family: GmarketSansTTF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1a202c;
+}
+.nav-right {
+  font-size: 0.75em;
+  margin-left: 144px;
+}
+.nav-right > span {
+  margin-left: 12px;
+
+  font-family: NotoSansKR;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.71;
+  letter-spacing: -0.28px;
+  color: #414141;
+}
+.nav-right > button {
+  width: 140px;
+  height: 40px;
+  background-color: #2557f5;
+  margin-left: 30px;
+
+  font-family: GmarketSansTTF;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.footer {
+  background-color: #22253a;
+  font-family: NotoSansKR;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.36;
+  letter-spacing: -0.44px;
+  color: #fff;
+  text-align: center;
+
+  padding: 31px 0 36px;
+}
+.footer > .logo {
+  width: 168.7px;
+  height: 21.9px;
+  margin: 14.7px 0 22.8px;
+}
+.footer > .email {
+  font-family: NotoSansKR;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.42px;
+  color: #b5b5b5;
+}
+
+.page {
+  background-color: #f5f5f5;
+  padding: 60px 0 54px;
+}
+.page-title {
+  margin: 0 auto 20px;
+  font-family: GmarketSansTTF;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: -1.8px;
+  text-align: center;
+  color: #1a202c;
+}
+
+.step-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 800px;
+  height: 120px;
+  margin: 20px auto 30px;
+  padding: 30px 82px 20px 93px;
+  border: solid 1px #ebebeb;
+  background-color: #fff;
+}
+.step {
+  text-align: center;
+  color: #b2b2b2;
+
+  font-family: GmarketSansTTF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0.85;
+  letter-spacing: -0.4px;
+  text-align: center;
+}
+.step-number {
+  font-weight: bold;
+  line-height: 0.85;
+  letter-spacing: normal;
+}
+.step-number:after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  background-color: #b2b2b2;
+  margin: 9.5px auto 14.5px;
+}
+.step.active {
+  color: #1e85ee;
+}
+.step.active > .step-number:after {
+  background-color: #1e85ee;
+}
+.step-arrow {
+  width: 12.7px;
+  height: 22.6px;
+  object-fit: contain;
+}
+
+.contetns {
+  width: 800px;
+  margin: 30px auto 0;
+  padding: 45px 51px 37px 45px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+}
+
+.row-title {
+  font-family: NotoSansKR;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #232323;
+}
+.row-description {
+  margin-top: 8px;
+
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.88;
+  letter-spacing: -0.32px;
+  text-align: left;
+  color: #8b8b8b;
+}
+.row-contents {
+  margin-top: 18px;
+}
+
+.row.buttons {
+  text-align: left;
+  margin-top: 22px;
+}
+
+button {
+  width: 140px;
+  height: 40px;
+  margin-right: 16px;
+  border: none;
+
+  font-family: GmarketSansTTF;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.buttons > button:first-child {
+  background-color: #d6d6d6;
+  color: #5d5d5d;
+}
+.buttons > button:nth-child(2) {
+  background-color: #2557f5;
+}
+
+.row.banner {
+  margin: 103px 0 0;
+  padding: 35px 15px 35px 33px;
+  border-radius: 6px;
+  background-color: #f1f2f4;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-text {
+  font-family: GmarketSansTTF;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  text-align: left;
+  color: #232323;
+}
+.banner-img {
+  width: 102px;
+  height: 100px;
+  object-fit: contain;
+}

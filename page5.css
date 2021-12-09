@@ -1,0 +1,268 @@
+.page-link-button {
+  background-color: #ccc;
+  color: #000;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  margin: 1em;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFBold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFMedium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFLight.ttf");
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+}
+
+.nav {
+  margin: 0 auto;
+  padding: 1em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-left > .logo {
+  height: 19.6px;
+}
+.nav-left > span {
+  margin-left: 50px;
+
+  font-family: GmarketSansTTF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1a202c;
+}
+.nav-right {
+  font-size: 0.75em;
+  margin-left: 144px;
+}
+.nav-right > span {
+  margin-left: 12px;
+
+  font-family: NotoSansKR;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.71;
+  letter-spacing: -0.28px;
+  color: #414141;
+}
+.nav-right > button {
+  width: 140px;
+  height: 40px;
+  background-color: #2557f5;
+  margin-left: 30px;
+
+  font-family: GmarketSansTTF;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.footer {
+  background-color: #22253a;
+  font-family: NotoSansKR;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.36;
+  letter-spacing: -0.44px;
+  color: #fff;
+  text-align: center;
+
+  padding: 31px 0 36px;
+}
+.footer > .logo {
+  width: 168.7px;
+  height: 21.9px;
+  margin: 14.7px 0 22.8px;
+}
+.footer > .email {
+  font-family: NotoSansKR;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.42px;
+  color: #b5b5b5;
+}
+
+.page {
+  background-color: #f5f5f5;
+  padding: 60px 0 54px;
+  text-align: center;
+}
+
+.page-title {
+  font-family: GmarketSansTTF;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 0.57;
+  letter-spacing: -0.6px;
+  color: #232323;
+}
+
+.page-description {
+  font-family: GmarketSansTTF;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  text-align: center;
+  color: #232323;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 870px;
+  margin: 28px auto 18px;
+  padding: 34px 0 33px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+}
+
+.tabs > .tab {
+  width: 300px;
+  height: 48px;
+  padding: 11px 98px 13px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+}
+.tab.active {
+  border: solid 1px #4394f0;
+  background-color: #4394f0;
+  color: #fff;
+}
+
+.contetns {
+  width: 870px;
+  margin: 18px auto 0;
+  padding: 47.5px 189.8px 50px 205.8px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+}
+
+.row {
+  text-align: left;
+}
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  display: block;
+  width: 158px;
+  height: 40px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+}
+.button:not(:last-child) {
+  border-right: none;
+}
+.button.active {
+  background-color: #4394f0;
+  color: #fff;
+}
+.button.singup {
+  width: 100%;
+  padding: 14px 20px 10px;
+  border-radius: 2px;
+  background-color: #2557f5;
+  color: #fff;
+  margin-top: 30px;
+}
+.button.singin {
+  width: 100%;
+  padding: 14px 20.4px 10px 20px;
+  border: solid 1px #2557f5;
+  background-color: #fff;
+  color: #2557f5;
+  margin-top: 16px;
+}
+
+.row-title,
+.input-label {
+  font-family: NotoSansKR;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  letter-spacing: -0.28px;
+  text-align: left;
+  color: #424242;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 473px;
+  height: 40px;
+  padding: 8px 428px 8px 16px;
+  border-radius: 2px;
+  border: solid 1px #c5ced2;
+  background-color: #fff;
+}
+
+hr {
+  border: 1px solid #c5ced2;
+  border-top: none;
+  margin: 20px 0 10px;
+}
+
+.row.agreement {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  letter-spacing: -0.28px;
+  text-align: left;
+  color: #757575;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.singin-noti {
+  font-family: NotoSansKR;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  letter-spacing: -0.28px;
+  color: #a4a4a4;
+}
+
+.link {
+  text-decoration: underline;
+}
