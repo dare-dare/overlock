@@ -31,6 +31,23 @@
 p {
   margin: 0;
 }
+button {
+  width: 187px;
+  height: 40px;
+  margin: 23px 0 0;
+  border: solid 1px #2557f5;
+  background-color: #fff;
+
+  font-family: GmarketSansTTF;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2557f5;
+  cursor: pointer;
+}
 
 .nav {
   margin: 0 auto;
@@ -49,9 +66,14 @@ p {
 .nav-left > .logo {
   height: 19.6px;
 }
-.nav-left > span {
+.nav-left > .logo > img {
+  height: 100%;
+}
+.nav-left > .nav-item {
+  margin: 0;
   margin-left: 50px;
-
+  width: auto;
+  height: auto;
   font-family: GmarketSansTTF;
   font-size: 18px;
   font-weight: 500;
@@ -59,28 +81,38 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #1a202c;
-}
-.nav-left > .active {
-  font-weight: bold;
+  background: #fff;
+  border: none;
+  cursor: pointer;
 }
 .nav-right {
-  font-size: 0.75em;
   margin-left: 144px;
+  font-size: 0.75em;
 }
-.nav-right > span {
-  margin-left: 12px;
-
+.nav-right > .nav-item {
+  margin: 0 6px;
+  width: auto;
+  height: auto;
   font-family: NotoSansKR;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.71;
   letter-spacing: -0.28px;
   color: #414141;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+.nav-item:focus {
+  font-weight: bold;
+  letter-spacing: -0.001527em;
 }
 .nav-button {
   width: 140px;
   height: 40px;
-  background-color: #2557f5;
+  background-color: #d6d6d6;
+  padding: 0 !important;
+  margin: 0 0 0 30px !important;
 
   font-family: GmarketSansTTF;
   font-size: 14px;
@@ -88,9 +120,12 @@ p {
   letter-spacing: normal;
   text-align: center;
   color: #fff;
-  border: none;
-  padding: 0 !important;
-  margin: 0 0 0 30px !important;
+  cursor: pointer;
+}
+.nav-button:focus {
+  background-color: #2557f5;
+  font-weight: normal;
+  letter-spacing: -0.001527em;
 }
 
 .footer {
@@ -106,9 +141,14 @@ p {
   padding: 31px 0 36px;
 }
 .footer > .logo {
+  display: block;
   width: 168.7px;
   height: 21.9px;
-  margin: 14.7px 0 22.8px;
+  margin: 14.7px auto 22.8px;
+}
+.footer > .logo > img {
+  width: 100%;
+  height: 100%;
 }
 .footer > .email {
   font-family: NotoSansKR;
@@ -373,21 +413,4 @@ p {
 .star-img {
   width: 100px;
   margin: 0 16px 5px;
-}
-
-button {
-  width: 187px;
-  height: 40px;
-  margin: 23px 0 0;
-  border: solid 1px #2557f5;
-  background-color: #fff;
-
-  font-family: GmarketSansTTF;
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2557f5;
 }

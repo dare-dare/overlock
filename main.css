@@ -25,6 +25,24 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFBold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFMedium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GmarketSansTTF";
+  src: url("font/GmarketSansTTFLight.ttf");
+  font-weight: 300;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -44,7 +62,6 @@ button {
   background-color: #fff;
 }
 .row {
-  max-width: 1600px;
   margin: 0 auto;
   padding: 2em 0;
   text-align: center;
@@ -88,38 +105,47 @@ button {
 .nav-left > .logo {
   height: 19.6px;
 }
-.nav-left > span {
+.nav-left > .logo > img {
+  height: 100%;
+}
+.nav-item {
+  width: auto;
+  height: auto;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+.nav-left > .nav-item {
+  margin: 0;
   margin-left: 50px;
-
   font-family: GmarketSansTTF;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.11;
   letter-spacing: normal;
   text-align: left;
   color: #1a202c;
 }
-.nav-left > .active {
-  font-weight: bold;
-}
 .nav-right {
-  font-size: 0.75em;
   margin-left: 144px;
+  font-size: 0.75em;
 }
-.nav-right > span {
-  margin-left: 12px;
-
+.nav-right > .nav-item {
+  margin: 0 6px;
   font-family: NotoSansKR;
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.71;
   letter-spacing: -0.28px;
   color: #414141;
+}
+.nav-item:focus {
+  font-weight: bold;
 }
 .nav-button {
   width: 140px;
   height: 40px;
-  background-color: #2557f5;
+  background-color: #d6d6d6;
+  padding: 0 !important;
+  margin: 0 0 0 30px !important;
 
   font-family: GmarketSansTTF;
   font-size: 14px;
@@ -127,8 +153,11 @@ button {
   letter-spacing: normal;
   text-align: center;
   color: #fff;
-  padding: 0 !important;
-  margin: 0 0 0 30px !important;
+  cursor: pointer;
+}
+.nav-button:focus {
+  background-color: #2557f5;
+  font-weight: normal;
 }
 
 .row.banner {
@@ -137,7 +166,8 @@ button {
   height: 512px;
 }
 .banner-text-wrapper {
-  padding: 120px 320px 290px;
+  max-width: 960px;
+  margin: 120px auto 0;
 }
 .banner-text-title {
   font-family: GmarketSansTTF;
@@ -156,7 +186,7 @@ button {
   color: #fff;
   margin-top: 20px;
 }
-.banner-text-wrapper > button {
+.banner-button {
   width: 200px;
   height: 54px;
   padding: 19px 20px;
@@ -167,7 +197,12 @@ button {
   font-weight: 500;
   letter-spacing: -0.32px;
   text-align: center;
+  cursor: pointer;
+  background-color: #d6d6d6;
   color: #fff;
+}
+.banner-button:focus {
+  background-color: #2557f5;
 }
 
 .row.step {
@@ -393,7 +428,7 @@ button {
 }
 
 .row.buttons {
-  margin: 2em;
+  margin: 2em auto;
 }
 .row.buttons > .banner {
   width: 800px;
@@ -453,9 +488,14 @@ button {
   padding: 31px 0 36px;
 }
 .footer > .logo {
+  display: block;
   width: 168.7px;
   height: 21.9px;
-  margin: 14.7px 0 22.8px;
+  margin: 14.7px auto 22.8px;
+}
+.footer > .logo > img {
+  width: 100%;
+  height: 100%;
 }
 .footer > .email {
   font-family: NotoSansKR;

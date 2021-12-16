@@ -31,6 +31,28 @@
 p {
   margin: 0;
 }
+button {
+  width: 170px;
+  height: 48px;
+  padding: 11px 0 13px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+
+  font-family: NotoSansKR;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  color: #4d4d4d;
+  cursor: pointer;
+}
+button:not(:last-child) {
+  border-right: none;
+}
+button:focus {
+  border: solid 1px #4394f0;
+  background-color: #4394f0;
+  color: #fff;
+}
 
 .nav {
   margin: 0 auto;
@@ -49,9 +71,14 @@ p {
 .nav-left > .logo {
   height: 19.6px;
 }
-.nav-left > span {
+.nav-left > .logo > img {
+  height: 100%;
+}
+.nav-left > .nav-item {
+  margin: 0;
   margin-left: 50px;
-
+  width: auto;
+  height: auto;
   font-family: GmarketSansTTF;
   font-size: 18px;
   font-weight: 500;
@@ -59,28 +86,38 @@ p {
   letter-spacing: normal;
   text-align: left;
   color: #1a202c;
-}
-.nav-left > .active {
-  font-weight: bold;
+  background: #fff;
+  border: none;
+  cursor: pointer;
 }
 .nav-right {
-  font-size: 0.75em;
   margin-left: 144px;
+  font-size: 0.75em;
 }
-.nav-right > span {
-  margin-left: 12px;
-
+.nav-right > .nav-item {
+  margin: 0 6px;
+  width: auto;
+  height: auto;
   font-family: NotoSansKR;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.71;
   letter-spacing: -0.28px;
   color: #414141;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+.nav-item:focus {
+  font-weight: bold;
+  letter-spacing: -0.001527em;
 }
 .nav-button {
   width: 140px;
   height: 40px;
-  background-color: #2557f5;
+  background-color: #d6d6d6;
+  padding: 0 !important;
+  margin: 0 0 0 30px !important;
 
   font-family: GmarketSansTTF;
   font-size: 14px;
@@ -88,8 +125,12 @@ p {
   letter-spacing: normal;
   text-align: center;
   color: #fff;
-  padding: 0 !important;
-  margin: 0 0 0 30px !important;
+  cursor: pointer;
+}
+.nav-button:focus {
+  background-color: #2557f5;
+  font-weight: normal;
+  letter-spacing: -0.001527em;
 }
 
 .footer {
@@ -105,9 +146,14 @@ p {
   padding: 31px 0 36px;
 }
 .footer > .logo {
+  display: block;
   width: 168.7px;
   height: 21.9px;
-  margin: 14.7px 0 22.8px;
+  margin: 14.7px auto 22.8px;
+}
+.footer > .logo > img {
+  width: 100%;
+  height: 100%;
 }
 .footer > .email {
   font-family: NotoSansKR;
@@ -145,27 +191,6 @@ p {
   display: flex;
   align-items: center;
 }
-button {
-  width: 170px;
-  height: 48px;
-  padding: 11px 0 13px;
-  border: solid 1px #e0e0e0;
-  background-color: #fff;
-
-  font-family: NotoSansKR;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: -0.32px;
-  color: #4d4d4d;
-}
-button:not(:last-child) {
-  border-right: none;
-}
-button.active {
-  border: solid 1px #4394f0;
-  background-color: #4394f0;
-  color: #fff;
-}
 
 hr {
   border-color: #4d4d4d;
@@ -192,6 +217,7 @@ hr {
 .box {
   padding: 20px 30px 20px 20px;
   background-color: #f5f5f5;
+  display: none;
 }
 .box-text {
   opacity: 0.8;
@@ -204,8 +230,21 @@ hr {
   color: #232323;
 }
 
-.expang-icon {
+.expand-icon {
   width: 17px;
   height: 17px;
   object-fit: contain;
+  cursor: pointer;
+}
+.row-title > .expand-icon.less {
+  display: none;
+}
+.row-title.show + .box {
+  display: block;
+}
+.row-title.show > .expand-icon.more {
+  display: none;
+}
+.row-title.show > .expand-icon.less {
+  display: block;
 }
